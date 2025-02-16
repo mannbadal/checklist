@@ -2,7 +2,8 @@
 
 This is a simple Checklist Application built with TypeScript and JavaScript, allowing users to create, edit, delete, and reorder items in their checklist.
 
-![image](https://github.com/user-attachments/assets/22ea07fd-15de-4df9-9370-efb9dbf0da51) ![image](https://github.com/user-attachments/assets/1b0ec11a-e4c0-4f31-ae47-4be592417595)
+![image](https://github.com/user-attachments/assets/22ea07fd-15de-4df9-9370-efb9dbf0da51)![image](https://github.com/user-attachments/assets/1b0ec11a-e4c0-4f31-ae47-4be592417595)![image](https://github.com/user-attachments/assets/575b538d-fea0-4818-b052-7c7cc1f3cff1)
+
 
 ## Features
 
@@ -12,6 +13,7 @@ This is a simple Checklist Application built with TypeScript and JavaScript, all
 - Delete items from the list.
 - Reorder items using drag-and-drop functionality.
 - All changes are saved to the local storage to persist data across sessions.
+- Realtime updates
 - PWA enabled: Users can install the app on their home screen for a native app-like experience.
 
 ## Installation
@@ -31,7 +33,21 @@ This is a simple Checklist Application built with TypeScript and JavaScript, all
 
 3. **Set up Firebase:**
 
-   Create a `.env` file in the root of your project and add your Firebase configuration details:
+   1. Create a new project at [Firebase Console](https://console.firebase.google.com)
+   2. Enable **Authentication** and **Realtime Database** services
+   3. Add your domain/localhost to authorized domains in Authentication settings
+   4. Set up Firebase Realtime Database security rules:
+
+   ```javascript
+   {
+     "rules": {
+       ".read": "auth != null",
+       ".write": "auth != null"
+     }
+   }
+   ```
+
+5. Create a `.env` file in the root of your project and add your Firebase configuration details:
 
    ```plaintext
    VITE_FIREBASE_API_KEY=your_api_key
@@ -45,7 +61,7 @@ This is a simple Checklist Application built with TypeScript and JavaScript, all
 
    Replace the placeholders with your actual Firebase configuration values.
 
-4. **Run the application:**
+5. **Run the application:**
 
    ```sh
    npm start
