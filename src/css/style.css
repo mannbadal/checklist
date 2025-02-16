@@ -105,6 +105,10 @@ section {
   align-items: center; /* Add this to vertically center items */
 }
 
+.newItemEntry__form ::placeholder {
+  font-size: 0.99rem;
+}
+
 .newItemEntry__input {
   width: calc(100% - (0.25rem + 48px));
   flex-grow: 1;
