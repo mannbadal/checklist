@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>My List</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <div id="loaderContainer" class="loader-container">
+      <div class="loader"></div>
+    </div>
+
+    <div id="loginContainer" class="login-container" style="display: none">
+      <form id="loginForm" class="login-form">
+        <h1>Shopping List</h1>
+        <img src="/apple-touch-icon.png" alt="Shopping Cart" />
+        <div id="loginError" class="login-error"></div>
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <div id="appContainer">
+      <main>
+        <h1 class="offscreen">My List</h1>
+
+        <section class="newItemEntry">
+          <h2 class="offscreen">New Item Entry</h2>
+          <form class="newItemEntry__form" id="itemEntryForm">
+            <label for="newItem" class="offscreen">Enter a new item</label>
+            <input
+              class="newItemEntry__input"
+              id="newItem"
+              type="text"
+              maxlength="50"
+              autocomplete="off"
+              placeholder="Add item (text or paste image)"
+              contenteditable="true"
+            />
+            <button
+              id="addItem"
+              class="button newItemEntry__button"
+              title="Add new item"
+              aria-label="Add new item to list"
+            >
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+          </form>
+        </section>
+
+        <section class="listContainer">
+          <header class="listTitle">
+            <input type="checkbox" id="checkAll" />
+            <h3 id="listName">Shopping List</h3>
+            <button
+              id="clearItemsButton"
+              class="button listTitle__button"
+              title="Clear the list"
+              aria-label="Remove all items from the list"
+            >
+              <i class="fa-solid fa-broom"></i>
+              All
+            </button>
+            <button
+              id="removeCheckedButton"
+              class="button listTitle__button"
+              style="display: none; background-color: transparent"
+            >
+              <i class="fa-solid fa-trash-can"></i>
+              <i class="fa-regular fa-circle-check"></i>
+            </button>
+          </header>
+          <hr />
+          <ul id="listItems"></ul>
+        </section>
+      </main>
+      <!-- Modal Structure -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <p id="modal-message"></p>
+          <button id="modal-yes" class="button modal-button">Yes</button>
+          <button id="modal-cancel" class="button modal-button">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
