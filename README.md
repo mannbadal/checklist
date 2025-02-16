@@ -2,8 +2,8 @@
 
 This is a simple Checklist Application built with TypeScript and JavaScript, allowing users to create, edit, delete, and reorder items in their checklist.
 
-![image](https://github.com/user-attachments/assets/22ea07fd-15de-4df9-9370-efb9dbf0da51)![image](https://github.com/user-attachments/assets/1b0ec11a-e4c0-4f31-ae47-4be592417595)![image](https://github.com/user-attachments/assets/575b538d-fea0-4818-b052-7c7cc1f3cff1)
-
+<img src="https://github.com/user-attachments/assets/718b9595-6846-4743-8910-1f64dbdd9d19" width="390" height="844" alt="iPhone screenshot 1"/>
+<img src="https://github.com/user-attachments/assets/575b538d-fea0-4818-b052-7c7cc1f3cff1" width="390" height="844" alt="iPhone screenshot 2"/>
 
 ## Features
 
