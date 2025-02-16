@@ -108,20 +108,6 @@ This application is PWA enabled, which means it can be installed on your mobile 
    - For Android, open the browser menu and select "Add to Home screen".
    - For iOS (Safari), tap the "Share" button and then select "Add to Home Screen".
 
-## Project Structure
-
-- `src/`: Contains the source code of the application.
-  - `model/`: Contains the model classes for the checklist.
-  - `view/`: Contains the view classes for rendering the checklist.
-- `index.html`: The main HTML file.
-- `style.css`: The main CSS file for styling the application.
-- `manifest.json`: The web app manifest file for PWA configuration.
-- `service-worker.js`: The service worker file for enabling offline capabilities and caching.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any bugs or features.
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
