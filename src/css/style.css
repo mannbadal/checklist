@@ -93,7 +93,7 @@ section {
 .newItemEntry {
   position: sticky;
   top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   background-color: var(--body-background-color);
   z-index: 1;
 }

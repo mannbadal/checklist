@@ -41,30 +41,6 @@
       <main>
         <h1 class="offscreen">My List</h1>
 
-        <section class="newItemEntry">
-          <h2 class="offscreen">New Item Entry</h2>
-          <form class="newItemEntry__form" id="itemEntryForm">
-            <label for="newItem" class="offscreen">Enter a new item</label>
-            <input
-              class="newItemEntry__input"
-              id="newItem"
-              type="text"
-              maxlength="50"
-              autocomplete="off"
-              placeholder="Add item (text or paste image)"
-              contenteditable="true"
-            />
-            <button
-              id="addItem"
-              class="button newItemEntry__button"
-              title="Add new item"
-              aria-label="Add new item to list"
-            >
-              <i class="fa-solid fa-plus"></i>
-            </button>
-          </form>
-        </section>
-
         <section class="listContainer">
           <header class="listTitle">
             <input type="checkbox" id="checkAll" />
@@ -87,6 +63,29 @@
               <i class="fa-regular fa-circle-check"></i>
             </button>
           </header>
+          <section class="newItemEntry">
+            <h2 class="offscreen">New Item Entry</h2>
+            <form class="newItemEntry__form" id="itemEntryForm">
+              <label for="newItem" class="offscreen">Enter a new item</label>
+              <input
+                class="newItemEntry__input"
+                id="newItem"
+                type="text"
+                maxlength="50"
+                autocomplete="off"
+                placeholder="Add item (text or paste image)"
+                contenteditable="true"
+              />
+              <button
+                id="addItem"
+                class="button newItemEntry__button"
+                title="Add new item"
+                aria-label="Add new item to list"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </form>
+          </section>
           <hr />
           <ul id="listItems"></ul>
         </section>
