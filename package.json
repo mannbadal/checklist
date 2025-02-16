@@ -10,13 +10,13 @@
   },
   "devDependencies": {
     "@types/estree": "^1.0.5",
-    "typescript": "^5.2.2",
-    "vite": "^5.2.13"
+    "typescript": "^5.7.3",
+    "vite": "^5.4.14"
   },
   "dependencies": {
     "@types/pulltorefreshjs": "^0.1.7",
-    "@vitejs/plugin-vue": "^5.0.5",
-    "firebase": "^10.12.2",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "firebase": "^10.14.1",
     "pulltorefreshjs": "^0.1.22"
   }
 }

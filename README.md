@@ -1,15 +1,12 @@
-# Shopping or To-Do List Application
+# Checklist, Shopping List or To-Do List Application
 
-This is a simple Shopping List Application built with TypeScript and JavaScript, allowing users to create, edit, delete, and reorder items in their shopping list.
+This is a simple Checklist Application built with TypeScript and JavaScript, allowing users to create, edit, delete, and reorder items in their checklist.
 
 ![image](https://github.com/user-attachments/assets/22ea07fd-15de-4df9-9370-efb9dbf0da51) ![image](https://github.com/user-attachments/assets/1b0ec11a-e4c0-4f31-ae47-4be592417595)
 
-
-
-
 ## Features
 
-- Add items to the shopping list.
+- Add items to the Checklist.
 - Edit items inline by clicking on the item label.
 - Mark items as completed by checking the checkbox, which applies a line-through style.
 - Delete items from the list.
@@ -22,8 +19,8 @@ This is a simple Shopping List Application built with TypeScript and JavaScript,
 1. **Clone the repository:**
 
    ```sh
-   git clone https://github.com/mannbadal/shopping-list.git
-   cd shopping-list
+   git clone https://github.com/mannbadal/checklist.git
+   cd checklist
    ```
 
 2. **Install dependencies:**
@@ -98,8 +95,8 @@ This application is PWA enabled, which means it can be installed on your mobile 
 ## Project Structure
 
 - `src/`: Contains the source code of the application.
-  - `model/`: Contains the model classes for the shopping list.
-  - `view/`: Contains the view classes for rendering the shopping list.
+  - `model/`: Contains the model classes for the checklist.
+  - `view/`: Contains the view classes for rendering the checklist.
 - `index.html`: The main HTML file.
 - `style.css`: The main CSS file for styling the application.
 - `manifest.json`: The web app manifest file for PWA configuration.

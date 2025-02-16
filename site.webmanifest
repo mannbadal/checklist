@@ -1,6 +1,6 @@
 {
-  "name": "Shopping List",
-  "short_name": "Shopping List",
+  "name": "Checklist",
+  "short_name": "Checklist",
   "icons": [
     {
       "src": "/public/android-chrome-192x192.png",
